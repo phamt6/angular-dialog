@@ -1,1 +1,9 @@
-<p>dialog works!</p>
+<ng-container *ngIf="display$ | async as display">
+    <section [class.open]=display (click)="close()">
+        <div (click)="$event.stopPropagation()">
+            <button class="close" type="button" (click)="close()">X</button>
+            ​
+            <h1>Hello World</h1>
+        </div>
+    </section>
+</ng-container>

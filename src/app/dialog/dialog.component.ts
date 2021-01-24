@@ -1,4 +1,6 @@
+import { DialogService } from './_services/dialog.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
 	selector: 'app-dialog',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./dialog.component.less']
 })
 export class DialogComponent implements OnInit {
+	display$: Observable<boolean> = new Observable<boolean>();
 
-	constructor() { }
+	constructor(
+		private dialogService: DialogService
+	) { }
 
-	ngOnInit(): void {
+	ngOnInit() {
+		this.display$ = this.dialogService.watch();
+	}
+
+	close() {
+		this.dialogService.close();
 	}
 
 }
