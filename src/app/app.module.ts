@@ -1,3 +1,4 @@
+import { DialogModule } from './dialog/dialog.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,7 +11,8 @@ import { DialogComponent } from './dialog/dialog.component';
     DialogComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
