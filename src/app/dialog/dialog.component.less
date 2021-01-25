@@ -25,8 +25,9 @@
             position: absolute;
             background-color: @nordea-blue;
             color: @white;
-            width: 100%;
+            width: calc(100% - @padding*2);
             height: @title-bar-height;
+            padding: 0 @padding;
 
             .@{c-dialog}__close {
                 background: none;
