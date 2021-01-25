@@ -1,9 +1,39 @@
 <ng-container *ngIf="display$ | async as display">
-    <section [class.open]=display (click)="close()">
-        <div (click)="$event.stopPropagation()">
-            <button class="close" type="button" (click)="close()">X</button>
-            ​
-            <h1>Hello World</h1>
+    <div class="c-dialog">
+        <div class="c-dialog__overlay" [class.open]=display (click)="close()">
         </div>
-    </section>
+        <div class="c-dialog__body">
+            <div class="c-dialog__title" (click)="$event.stopPropagation()">
+                <button class="c-dialog__close" type="button" (click)="close()">X</button>
+                ​
+                <span>Dialog title</span>
+            </div>
+            <div class="c-dialog__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus rerum eligendi. Harum quo debitis porro, numquam magni mollitia amet odit necessitatibus officia maiores sint cum. Provident dolorum nihil quidem.
+            </div>
+        </div>       
+    </div> 
 </ng-container>
