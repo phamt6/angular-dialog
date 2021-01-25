@@ -1,16 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'app-dynamic',
 	templateUrl: './dynamic.component.html',
 	styleUrls: ['./dynamic.component.less']
 })
-export class DynamicComponent implements OnInit {
-	someProp = 'hello';
-	
-	constructor() { }
-
-	ngOnInit(): void {
-	}
-
+export class DynamicComponent {
+	content: string = 'Dynamic Content';
 }

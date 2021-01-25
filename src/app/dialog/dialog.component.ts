@@ -26,9 +26,12 @@ export class DialogComponent implements OnInit {
 	}
 
 	ngAfterViewInit() {
-		const componentFactory = this.componentFactoryResolver.resolveComponentFactory(DynamicComponent);
-		this.dynamicInsert.clear();
-		const dynamicComponent = <DynamicComponent>this.dynamicInsert.createComponent(componentFactory).instance;
-		dynamicComponent.someProp = 'Hello World';
+		// I wish I could come up with a proper solution instead of this hacky approach due to time constraint
+		setTimeout(() => {
+			const componentFactory = this.componentFactoryResolver.resolveComponentFactory(DynamicComponent);
+			this.dynamicInsert.clear();
+			this.dynamicInsert.createComponent(componentFactory).instance;
+		}, 0)
+		
 	}
 }
