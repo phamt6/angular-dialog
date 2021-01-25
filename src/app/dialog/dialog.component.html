@@ -1,15 +1,19 @@
 <!-- <ng-container *ngIf=""> -->
 <ng-container>
-    <div class="c-dialog" [hidden]="(display$ | async) === false">
+    <div class="c-dialog" 
+        role="alertdialog" 
+        aria-describedby="dialogDescription"
+        aria-labelledby="dialogTitle"
+        [hidden]="(display$ | async) === false">
         <div class="c-dialog__overlay" [class.open]=display$ (click)="close()">
         </div>
         <div class="c-dialog__body">
-            <div class="c-dialog__title" (click)="$event.stopPropagation()">
-                <button class="c-dialog__close" type="button" (click)="close()">x</button>
+            <div class="c-dialog__title" (click)="$event.stopPropagation()" id="dialogTitle">
+                <button class="c-dialog__close" type="button" (click)="close()">&times;</button>
                 ​
-                <div>Dialog title</div>
+                <div>{{dialogTitle}}</div>
             </div>
-            <div class="c-dialog__content">
+            <div class="c-dialog__content" id="dialogDescription">
                 <ng-template #dynamicInsert></ng-template>
             </div>
         </div>       

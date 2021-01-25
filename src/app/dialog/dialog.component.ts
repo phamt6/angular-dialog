@@ -1,5 +1,5 @@
 import { DialogService } from './_services/dialog.service';
-import { Component, ComponentFactoryResolver, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, Input, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DynamicComponent } from '../dynamic/dynamic.component';
 
@@ -9,6 +9,7 @@ import { DynamicComponent } from '../dynamic/dynamic.component';
 	styleUrls: ['./dialog.component.less']
 })
 export class DialogComponent implements OnInit {
+	@Input() dialogTitle = 'Title Placeholder';
 	@ViewChild('dynamicInsert', { read: ViewContainerRef }) dynamicInsert!: ViewContainerRef;
 	display$: Observable<boolean> = new Observable<boolean>();
 
