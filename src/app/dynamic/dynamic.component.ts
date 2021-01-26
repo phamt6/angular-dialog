@@ -1,5 +1,5 @@
 import { DialogService } from './../dialog/_services/dialog.service';
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
 	selector: 'app-dynamic',
