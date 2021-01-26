@@ -1,3 +1,4 @@
+import { DialogService } from './../dialog/_services/dialog.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,6 +6,12 @@ import { Component } from '@angular/core';
 	templateUrl: './dynamic.component.html',
 	styleUrls: ['./dynamic.component.less']
 })
-export class DynamicComponent {
-	content: string = 'Dynamic Content';
+export class DynamicComponent {	
+	constructor(
+		private dialogService: DialogService
+	){}
+
+	submit() {
+		this.dialogService.close();
+	}
 }
